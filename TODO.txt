@@ -1,0 +1,25 @@
+TODOs:
+clone the repo and add file locally (the parse .exe file, etc)
+
+(do this first before adding any files for the project)
+delete nearly all the files created by fastpages, since we just don't need that
+
+Or, just do this in another repo
+https://towardsdatascience.com/simple-guide-to-hosting-project-on-github-aebf6f3c6f97
+To summarize, after adding files (should include index.html/.md ?), click setting ->
+navigate to page -> at Github Pages, select a branch to host online, and just wait for it
+EZ (indeed really easy)
+Remember to add '/' at the end of url: xxx.github.io/projectname/
+
+
+Integrate with pyscript?
+    to do the coding inside our website, powered by the mind-blowing pyscript
+    (ref to tinypets: pyscript version for online repl)
+
+
+Arch.:
+    index.html: show the text input bar & 'go' button
+    result.html: show the link to the colab & the text input button again
+    comment: idk how to do responsive & javascript, this is the minimum that
+              i can do without taking too long
+
