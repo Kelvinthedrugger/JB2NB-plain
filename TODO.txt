@@ -23,3 +23,7 @@ Arch.:
     comment: idk how to do responsive & javascript, this is the minimum that
               i can do without taking too long
 
+
+Frontend:
+    add "Github" button &icon &url
+
