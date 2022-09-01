@@ -1,9 +1,36 @@
 <!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <title>JB2NB !!!!! That's right</title>
+</head>
 
-<head>JB2NB !!!!!</head>
+<body>
+    <p>please input the jb/nb url</p>
+    <input type="text" placeholder="jb/nb url" id="url">
+    <button type="button" onclick="getInputValue();">Get Value</button>
+    <p id="res"></p>
+    <script>
+        function getInputValue() {
+            // Selecting the input element and get its value 
+            var inputVal = document.getElementById("url").value;
+            //console.log(inputVal); // for debug
+            // indexing it!
+            let idx = inputVal.indexOf("github");
 
-<p>please input the jb/nb url</p>
-<input text ...>
-<!--- action, blah--->
+            // prefix (head) of the result string
+            let pref = "https://colab.research.google.com/";
 
+            // get result
+            //let url_p = pref + inputVal.substr(idx);
+            //res.innerHTML = `url to colab:<br>${url_p}<br>`;
+            // TMP version to copy it easier
+            res.innerHTML = `<br>${pref}<br>${inputVal.substr(idx)}`;
+            // directly print it in the page
+            // (NOT DONE) print it with link (so that the displayed text could be shorten)
+        }
+    </script>
+</body>
+
+</html>
