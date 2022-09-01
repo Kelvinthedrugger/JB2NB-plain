@@ -16,12 +16,14 @@ Integrate with pyscript?
     to do the coding inside our website, powered by the mind-blowing pyscript
     (ref to tinypets: pyscript version for online repl)
 
+    one idea here:
+        show the chosen jb (notebook)
+            notebook content: use python (pyscript)
+                requests
+                    requests.get(url: raw content github).content
 
-Arch.:
-    index.html: show the text input bar & 'go' button
-    result.html: show the link to the colab & the text input button again
-    comment: idk how to do responsive & javascript, this is the minimum that
-              i can do without taking too long
+            integrate with repl
+
 
 
 Frontend:
