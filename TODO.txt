@@ -24,3 +24,7 @@ Integrate with pyscript?
 
             integrate with repl
 
+
+Add "jump back to Github button" at top right corner:
+    since we have to mess around with locations, we temporarily stall it ...
+
