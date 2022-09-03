@@ -11,6 +11,14 @@
     <input type="text" placeholder="jb/nb url" id="url">
     <button type="button" onclick="getInputValue();">Get Value</button>
     <p id="res"></p>
+
+    <!--- the button!
+    <a target="_blank" href="https://colab.research.google.com/github/huggingface/blog/blob/main/notebooks/01_how_to_train.ipynb"> -->
+    <a target="_blank" id="bt">
+    <!---the image--->
+    <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
+    </a>
+
     <script>
         function getInputValue() {
             // Selecting the input element and get its value 
@@ -22,13 +30,16 @@
             // prefix (head) of the result string
             let pref = "https://colab.research.google.com/";
 
-            // get result
-            //let url_p = pref + inputVal.substr(idx);
-            //res.innerHTML = `url to colab:<br>${url_p}<br>`;
-            // TMP version to copy it easier
-            res.innerHTML = `<br>${pref}<br>${inputVal.substr(idx)}`;
             // directly print it in the page
-            // (NOT DONE) print it with link (so that the displayed text could be shorten)
+            // get result
+            let kk = inputVal.indexOf("master");
+            res.innerHTML = `...${inputVal.substr(kk+6)}`;
+
+            // add attr to <a target="_blank">
+            var aa = document.getElementById("bt");
+            aa.href = pref + inputVal.substr(idx);
+            //document.body.appendChild(a);
+
         }
     </script>
 </body>
