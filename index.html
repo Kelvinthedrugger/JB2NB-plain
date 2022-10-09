@@ -23,16 +23,24 @@
         function getInputValue() {
             // Selecting the input element and get its value 
             var inputVal = document.getElementById("url").value;
-            //console.log(inputVal); // for debug
-            // indexing it!
-            let idx = inputVal.indexOf("github");
 
-            // prefix (head) of the result string
+            let idx = 0;
             let pref = "https://colab.research.google.com/";
+            if (inputVal.startsWith("https://github.com/")){
+                idx = 19;
+                pref += "github/";
+            }
+
+            if (inputVal.startsWith("http://nbviewer.ipython.org/")){
+                //console.log(inputVal); // for debug
+                // indexing it!
+                idx = inputVal.indexOf("github");
+            }
+            // prefix (head) of the result string
 
             // directly print it in the page
             // get result
-            let kk = inputVal.indexOf("master");
+            let kk = inputVal.indexOf("blob");
             res.innerHTML = `...${inputVal.substr(kk+6)}`;
 
             // add attr to <a target="_blank">

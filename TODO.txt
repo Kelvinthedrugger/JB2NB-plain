@@ -29,6 +29,8 @@ Add "jump back to Github button" at top right corner:
     since we have to mess around with locations, we temporarily stall it ...
 
 
+(done)
 Add support to "normal jb url on github"
     currently only support nbviewer ones, use string.split("blah") to do it?
+
 
