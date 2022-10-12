@@ -20,20 +20,23 @@
     </a>
 
     <style>
-#githubicon {
-    position: relative;
-}
-            #githubicon img {
-                position: absolute;
-                top: 0px;
-                right: 0px;
-            }
+    #githubicon {
+        position: relative;
+    }
+    #githubicon img {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
     </style>
     <!--- TODO: add button --->
     <div id="githubicon">
+    <!---<a style="position:absolute" target="_blank" id="github_icon">--->
         <a target="_blank" id="github_icon">
-        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Back to GitHub"
-                width="50" height="50">
+        <!---<img style="position: absolute; top: 0px;right: 0px;"--->
+        <img 
+            src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Back to GitHub"
+            width="50" height="50" href="https://github.com/Kelvinthedrugger/JB2NB-plain">
         </a>
     </div>
 
@@ -49,7 +52,7 @@
                 pref += "github/";
             }
 
-            if (inputVal.startsWith("http://nbviewer.ipython.org/")){
+            else if (inputVal.startsWith("http://nbviewer.ipython.org/")){
                 //console.log(inputVal); // for debug
                 // indexing it!
                 idx = inputVal.indexOf("github");
