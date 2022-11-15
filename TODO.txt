@@ -28,6 +28,7 @@ Integrate with pyscript?
 Add "jump back to Github button" at top right corner:
     since we have to mess around with locations, we temporarily stall it ...
 
+Add key shortcut so that the user experience is better & will be more productive.
 
 (done)
 Add support to "normal jb url on github"
