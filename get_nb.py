@@ -14,9 +14,10 @@ def get_url(*args):
     # this is the right way
     # for ele in args[0]:
     #  idx = ele.index("github"); a + ele[idx:]
-    idx = 28
-    a = "https://colab.research.google.com/"
-    return [a + ele[idx:] for ele in args[0]]
+
+    idx = 28 # nbviewer ones, == len("http://nbviewer.ipython.org/")
+    pref = "https://colab.research.google.com/"
+    return [pref + ele[idx:] for ele in args[0]]
 
 if __name__ == "__main__":
     import sys
