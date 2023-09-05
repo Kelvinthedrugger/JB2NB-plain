@@ -51,7 +51,9 @@
                 pref += "github/";
             }
 
-            else if (inputVal.startsWith("http://nbviewer.ipython.org/")){
+            else if (inputVal.startsWith("http://nbviewer") || inputVal.startsWith("https://nbviewer")) {
+                // http(s)://nbviewer.x.org
+                // 'x' can be either 'ipython' or 'jupyter'
                 //console.log(inputVal); // for debug
                 // indexing it!
                 idx = inputVal.indexOf("github");
