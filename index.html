@@ -90,6 +90,17 @@
           }
         });
     </script>
+    <script>
+      // try to implement 'focus when press '/'' here, code from gemini google
+      // this doesn't work, to be add (it's be a long time coming anyway!)
+        var input = document.getElementById("url");
+        // keydown
+        input.addEventListener("keydown", function(event) {
+          if (event.key === "/") {
+            this.focus();
+          }
+        });
+    </script>
 </body>
 
 </html>
