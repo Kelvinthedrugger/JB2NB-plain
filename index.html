@@ -91,13 +91,16 @@
         });
     </script>
     <script>
-      // try to implement 'focus when press '/'' here, code from gemini google
-      // this doesn't work, to be add (it's be a long time coming anyway!)
+        // should've select 'background' instead of 'input type=text'? (yes)
+        // just select the whole document and you'll be fine
         var input = document.getElementById("url");
         // keydown
-        input.addEventListener("keydown", function(event) {
+        document.addEventListener("keydown", function(event) {
           if (event.key === "/") {
-            this.focus();
+            input.focus();
+            // avoiding '/' being typed in the first place
+            // i.e., we only want the 'focus' feature
+            event.preventDefault(); 
           }
         });
     </script>
